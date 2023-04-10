@@ -49,7 +49,7 @@ def read_file(file_name, dec_type="Greedy"):
 
 
 if __name__ == "__main__":
-    files = [
+    """files = [
         "Transformer",
         "Multi-Trs",
         "MoEL",
@@ -59,7 +59,8 @@ if __name__ == "__main__":
         "CEM_woEMO",
         "CEM_woCOG",
         "CEM_woDiv",
-    ]
+    ]"""
+    files = ["CEM"]
 
     best_ppl = 50
     best_acc = 0
