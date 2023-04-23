@@ -73,7 +73,7 @@ def make_model(vocab, dec_num):
 
 
 def train(model, train_set, dev_set):
-    check_iter = 2000
+    check_iter = 500
     try:
         model.train()
         best_ppl = 1000
@@ -81,7 +81,8 @@ def train(model, train_set, dev_set):
         writer = SummaryWriter(log_dir=config.save_path)
         weights_best = deepcopy(model.state_dict())
         data_iter = make_infinite(train_set)
-        for n_iter in tqdm(range(1000000)):
+        # CHANGE ITERATION COUNT HERE
+        for n_iter in tqdm(range(10000)):
             if "cem" in config.model:
                 loss, ppl, bce, acc, _, _ = model.train_one_batch(
                     next(data_iter), n_iter
