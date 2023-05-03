@@ -1,3 +1,14 @@
+# Assignment Section of the repository
+
+To run:
+```sh
+python main.py --model cem --lr 0.001 --batch_size 16
+```
+For other hyper parameter changes, see config.py.
+
+In order to use ADAM rather than NOAM, you can change the default value in the line 60 of config.py to false. 
+
+
 # CEM
 > The official implementation for the paper *CEM: Commonsense-aware Empathetic Response Generation*.
 
