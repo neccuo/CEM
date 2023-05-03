@@ -1,5 +1,7 @@
 # Assignment Section of the repository
 
+All the commits since the fork done by: Necati Mert Aydemir
+
 To run:
 ```sh
 python main.py --model cem --lr 0.001 --batch_size 16
